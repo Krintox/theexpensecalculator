@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width" initial-scale=1 charset="utf-8">
+  <title>Expense-Calculator</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu|Pompiere|Poppins" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="Stylesheets/index.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">    
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href=""><img src="Images/nav-logo.png"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#row">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#exp-calc">Expense Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">About</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="row" id="row">
+
+        <div class="col-lg-6">
+          <h1 class="big-heading">User friendly application to calculate and review your expenses.</h1>
+          <p class="title-text">Draft your budget and quickly analyze your expenses
+          and find out the areas where you are over spending.</p>          
+        </div>
+
+        <div class="col-lg-6">
+          <img class= "monthly-expense-logo" src="Images/monthly-expenses-removebg-preview.png">
+        </div>
+
+      </div>
+  </section>
+
+  <section class="budget-calc-section" id="exp-calc">
+    <div id="flex">
+      <div class="budget">
+        <div class="budget-balance-class">
+          <div class="totalBudgetClass">
+            <h2>Total Budget: <span id="totalBudget"> 0</span></h2>
+          </div>
+          <div class="currentBalanceClass">
+            <h2>Current Balance: <span id="currentBalance"> 0</span></h2>
+          </div>
+        </div>
+        <h2>Enter Your Budget</h2>
+        <input type="number" placeholder="add money" id="money"><br>
+          <button onclick="addMoney()" class="btn" id="addMoney">Add Money</button>
+        <h2>Add Expenses</h2>
+        <input type="text" placeholder="expense name" id="expenseName">
+        <input type="number" placeholder="add expense" id="expenseAmount"><br>
+          <button onclick="addExpense()" class="btn" id="addExpense">Add Expense</button>      
+      </div>
+      <div class="expense-list">
+        <h2>Added Expenses</h2>
+        <div class="addedExpenses">
+          <div id="addedExpense">     
+            <ul id="expenseList">
+              <li class="expenseList-title">Expense Title</li>
+            </ul>
+          </div>
+          <div class="expenseAmountList">
+            <ul id="expenseAmountList">
+              <li class="expenseAmount-title">Amount</li>
+            </ul>
+          </div>
+          <!-- <div class="removeIcon">
+            <ul id="removeIcon"><a onclick="removeListItem()" class="trash-icon"><i class="fas fa-trash"></i></a></ul>
+          </div> -->
+        </div>
+      </div>
+    </div> 
+
+  </section>
+
+  <section class="footer" id="footer">
+
+    <div class="abt-exp-calc col-lg-4">
+      <h3 class="footer-col1-heading"><u>About Expense Calculator</u></h3>
+      <div class="footer-list">
+        <ul class="abt-calc-list">
+          <li>Enter your budget and enter the list of expenses</li>
+          <li>Use this online tool to quickly understand and evaluate your spending habits</li>
+          <li>Start budgeting today</li>
+        </ul>
+      </div>
+    </div>
+    <div class="quick-links-footer col-lg-4">
+      <u>Quick Links</u>
+      <p>
+      <a href="https://www.linkedin.com/in/shashank-suggala-7ab488200"><i class="social-icon fab fa-linkedin fa-2x"></i></a>
+      <a href="https://www.instagram.com/shashank18r/"><i class="social-icon fab fa-instagram fa-2x"></i></a>
+      <a href="https://github.com/Krintox"><i class="social-icon fab fa-github fa-2x"></i></a>
+      </p>
+    </div>
+    <div class="footer-mail">
+      <u>Contact Me</u>
+      <a href="mailto:shashank.suggala2021@vitstudent.ac.in"><p class="footer-email">shashank.suggala2021@vitstudent.ac.in</p></a>
+    </div>
+
+  </section>
+<!-- 
+  <i class="test-icon fas fa-trash"></i> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="scripts/index.js"></script>
+    
+  </body>
+  </html>

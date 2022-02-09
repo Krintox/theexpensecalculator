@@ -1,0 +1,298 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  /* border: 1px solid blue; */
+}
+
+body {
+    font-family: "Montserrat";
+    text-align: center;
+    scroll-behavior: smooth;
+  }
+  /* Navigation Bar */
+  
+  .navbar {
+    background: rgb(250, 244, 244);
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-item {
+    padding: 0 1.1rem;
+  }
+  
+  .nav-link {
+    font-size: 2.5rem;
+    color: orange; 
+    font-family: 'Pompiere'; 
+    font-weight: bold;
+    padding: 1rem;
+    font-weight: bold;
+  }
+
+  .nav-link:hover {
+    background: orange;
+    color: white;
+}
+  
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("//Images/hd-black-menu-burger-icon-transparent-background-31634946207uno2yrzogi-removebg-preview\ \(1\).png");
+  }
+
+  .row {
+    background: linear-gradient(to bottom, rgb(243, 176, 100), #fc933e);
+    padding-top: 5rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+.big-heading {
+    font-size: 5.5rem;
+    font-family: 'Pompiere';
+    padding-left: 2rem;
+    line-height: 1.3;
+    font-weight: bold;
+    padding-bottom: 0.6rem;
+    color: white;
+    text-align: left;
+}
+
+.title-text {
+    font-size: 1.1rem;
+    font-family: 'Poppins';
+    padding-left: 2rem;
+    color: white;
+    text-align: left;
+    padding-bottom: 2.5rem;
+}
+
+/* Budget-Calculator-Section */
+
+.budget-calc-section {
+  background: rgb(250, 244, 244);
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+#flex {
+  display: flex;
+}
+
+.budget {
+  width: 50%;
+  border: 1px solid orange;
+  padding: 1rem;
+}
+
+.expense-list {
+  width: 50%;
+}
+
+.budget-balance-class {
+  display: flex;
+}
+
+.totalBudgetClass {
+  width: 50%;
+}
+
+.currentBalanceClass {
+  width: 50%;
+}
+
+#money, #expenseName, #expenseAmount {
+  background: none;
+  border: 2px solid orange;
+}
+
+.addedExpenses {
+  display: flex;
+}
+
+#addedExpense {
+  width: 50%;
+  text-align: center;
+}
+
+.expenseAmountList {
+  width: 33.3%;
+  text-align: center;
+}
+
+.expenseAmount-title, .expenseList-title {
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.removeIcon {
+  width: 33.3%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.trash-icon {
+  color: orange;
+}
+
+#expenseList {
+  padding: 2rem;
+  padding-right: 0;
+  list-style: none;
+  font-size: 1rem;
+}
+
+#expenseAmountList {
+  padding: 2rem;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.btn {
+  color: orange;
+  border: 2px solid orange;
+  background: white;
+  font-weight: bold;
+  height: 3rem;
+  width: 9rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  background: orange;
+  color: white;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.footer {
+  background: linear-gradient(to bottom, rgb(243, 176, 100), #fc933e);
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.abt-exp-calc {
+  padding-left: 2rem;
+}
+
+.footer-list {
+  text-align: left;
+  color: white;
+}
+
+.footer-col1-heading {
+  color: white;
+  font-family: 'Pompiere';
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.quick-links-footer {
+  color: white;
+  font-family: 'Pompiere';
+  font-size: 2rem;
+}
+
+.social-icon {
+  padding-top: 1.5rem;
+  color: white;
+  font-size: 4rem;
+}
+
+.social-icon :hover {
+  color: blue;
+}
+
+.footer-mail {
+  color: white;
+  font-family: 'Pompiere';
+  font-size: 2rem;
+}
+
+.footer-email {
+  padding-top: 1.5rem;
+  text-decoration: underline;
+  color: blue;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+.test-icon {
+  color: red;
+  visibility: hidden;
+  display: block;
+}
+
+@media screen and (max-width: 995px) {
+
+  .budget-calc-section{
+    display: block;
+  }
+  
+  .footer {
+    display: block;
+    text-align: left;
+  }
+
+  .quick-links-footer {
+    padding-left: 2rem;
+  }
+
+  .footer-mail {
+    padding-left: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .big-heading {
+    font-size: 4rem;
+  }
+
+  .title-text {
+    padding-bottom: 0.5rem;
+  }
+
+  .monthly-expense-logo {
+    width: 25rem;
+  }
+
+  .output-row {
+    display: flex;
+  }
+
+  .output-heading .output-icons .output-value {
+    font-size: 0.5rem;
+  }
+  
+}
+
+@media screen and (max-width: 430px) {
+
+  .monthly-expense-logo {
+    width: 20rem;
+  }
+  
+}
+
+@media screen and (max-width: 360px) {  
+
+  .budget-calc-section{
+    padding-bottom: 0;
+  }
+  
+}
