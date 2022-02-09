@@ -1,1 +1,1 @@
-(LINK TO THE WEBSITE)[https://theexpensecalculator.netlify.app/]
+[LINK TO THE WEBSITE](https://theexpensecalculator.netlify.app/)
